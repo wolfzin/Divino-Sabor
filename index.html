@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Divino Sabor · Almoço no Centro de Guabiruba, seg a sáb (demonstração)</title>
+<meta name="description" content="Restaurante Divino Sabor: buffet a quilo e buffet livre com sobremesa, de segunda a sábado. Rua Alois Erthal, 1250, sala 05, Centro de Guabiruba.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#4A382E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Patrick+Hand&display=swap" rel="stylesheet">
+<style>
+:root{--mostarda:#D89A36;--madeira:#4A382E;--tinta:#221D1A;--fundo:#FAF7F2;--cinza:#ADAFAF;--folha:#5E7D3A;--lousa:#2E2A26;
+  --sans:"Nunito","Segoe UI",Roboto,Helvetica,Arial,sans-serif;--giz:"Patrick Hand","Comic Sans MS","Chalkboard SE",cursive}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font-family:var(--sans);font-size:1.0625rem;line-height:1.55;padding-bottom:84px;overflow-x:hidden}
+@media(min-width:900px){body{padding-bottom:0}}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--madeira)}
+:focus-visible{outline:3px solid var(--mostarda);outline-offset:2px;border-radius:6px}
+.skip{position:absolute;left:.75rem;top:-4rem;background:var(--tinta);color:#fff;padding:.7rem 1rem;z-index:99;border-radius:8px}
+.skip:focus{top:.75rem}
+.demo{font-size:.78rem;text-align:center;background:#ece6dc;color:#6b5f55;padding:.3rem .8rem}
+.barra{position:sticky;top:0;z-index:30;background:var(--madeira);color:#fff}
+.barra .in{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding:.55rem 1rem;min-height:60px}
+.barra .nome{font-weight:800;font-size:1.15rem;letter-spacing:.01em;line-height:1.1}
+.barra .nome small{display:block;font-weight:600;font-size:.8rem;color:#e9d7bc}
+.bt{display:inline-flex;align-items:center;justify-content:center;gap:.45rem;min-height:48px;padding:.6rem 1.1rem;border-radius:999px;font-weight:800;text-decoration:none;font-size:1rem;border:0;cursor:pointer}
+.bt svg{width:20px;height:20px;flex:none}
+.bt-mostarda{background:var(--mostarda);color:var(--tinta)}
+.bt-mostarda:hover{background:#e7ad4f}
+.bt-claro{background:#fff;color:var(--tinta);border:2px solid #e3dccf}
+.bt-claro:hover{border-color:var(--mostarda)}
+main{max-width:1100px;margin:0 auto;padding:1rem}
+.painel{display:grid;gap:1rem}
+@media(min-width:900px){.painel{grid-template-columns:1.25fr 1fr;align-items:start;gap:1.5rem;padding-top:1rem}}
+.ola h1{font-size:clamp(1.5rem,4.5vw,2.1rem);line-height:1.15;margin:.4rem 0 .3rem;font-weight:800}
+.ola p{margin:0 0 .8rem;color:#5a4e45;max-width:60ch}
+/* status */
+.status{display:flex;align-items:center;gap:.7rem;background:#fff;border:2px solid #ece4d6;border-radius:16px;padding:.9rem 1rem;font-weight:700}
+.status .pt{width:14px;height:14px;border-radius:50%;background:var(--folha);box-shadow:0 0 0 5px rgba(94,125,58,.18);flex:none}
+.status.fechado .pt{background:#b44a2d;box-shadow:0 0 0 5px rgba(180,74,45,.18)}
+.status small{display:block;font-weight:600;color:#6b5f55}
+/* lousa */
+.lousa{position:relative;background:var(--lousa);color:#f4f1ea;border-radius:14px;padding:1.6rem 1.4rem 1.5rem;border:10px solid #6b4f3a;box-shadow:inset 0 0 40px rgba(0,0,0,.45),0 6px 0 #3b2c22;
+  background-image:radial-gradient(ellipse at 20% 30%,rgba(255,255,255,.05),transparent 50%),radial-gradient(ellipse at 80% 70%,rgba(255,255,255,.04),transparent 55%)}
+.lousa h2{font-family:var(--giz);font-weight:400;font-size:2.2rem;margin:0 0 .2rem;color:#fff;letter-spacing:.02em}
+.lousa .data{font-family:var(--giz);font-size:1.2rem;color:#f1cf8f;margin:0 0 .8rem}
+.lousa ul{list-style:none;margin:0 0 1rem;padding:0;font-family:var(--giz);font-size:1.6rem;line-height:1.35}
+.lousa li::before{content:"– ";color:#f1cf8f}
+.lousa .modelo{display:inline-block;font-family:var(--sans);font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:#f1cf8f;color:var(--tinta);padding:.2rem .5rem;border-radius:4px;margin-bottom:.8rem}
+.lousa .rodape-lousa{border-top:2px dashed rgba(255,255,255,.25);padding-top:.8rem;font-family:var(--giz);font-size:1.35rem;color:#fff}
+.giz-traco{position:absolute;right:16px;bottom:-10px;width:56px;height:10px;background:#efeae0;border-radius:3px;transform:rotate(-4deg)}
+/* ações */
+.acoes3{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem}
+.acao{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.3rem;min-height:84px;background:#fff;border:2px solid #ece4d6;border-radius:16px;text-decoration:none;color:var(--tinta);font-weight:800;font-size:.95rem;text-align:center;padding:.6rem}
+.acao svg{width:28px;height:28px}
+.acao.wa{background:var(--mostarda);border-color:var(--mostarda)}
+.acao:hover{border-color:var(--mostarda)}
+.cartao{background:#fff;border:2px solid #ece4d6;border-radius:18px;padding:1.2rem}
+.cartao h2{font-size:1.25rem;margin:0 0 .6rem;font-weight:800}
+section{margin-top:1.5rem}
+.sec-tit{font-size:clamp(1.35rem,3.5vw,1.7rem);font-weight:800;margin:0 0 .8rem}
+/* como funciona */
+.dois{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+.modo{background:#fff;border-radius:18px;padding:1.1rem;border-top:6px solid var(--mostarda);box-shadow:0 1px 0 #e6ddcf}
+.modo h3{margin:0 0 .3rem;font-size:1.15rem}
+.modo p{margin:0 0 .6rem;font-size:1rem;color:#4f453d}
+.preco{font-family:var(--giz);font-size:1.25rem;color:#8a6a2f;border-top:1px dashed var(--cinza);padding-top:.5rem}
+.inclui{margin:.8rem 0 0;font-weight:700;display:flex;align-items:center;gap:.5rem}
+.inclui::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--folha)}
+/* nota */
+.nota{display:grid;gap:1rem}
+@media(min-width:760px){.nota{grid-template-columns:220px 1fr;align-items:center}}
+.selo{background:var(--madeira);color:#fff;border-radius:22px;padding:1.3rem;text-align:center}
+.selo b{display:block;font-size:3.6rem;line-height:1;color:var(--mostarda)}
+.selo span{display:block;letter-spacing:.15em;color:var(--mostarda)}
+.selo p{margin:.4rem 0 0;font-weight:700}
+.balões{list-style:none;margin:0;padding:0;display:grid;gap:.7rem}
+.balões li{background:#fff;border-radius:18px 18px 18px 4px;padding:.8rem 1rem;box-shadow:0 1px 0 #e3dacb;max-width:62ch}
+.balões li:nth-child(2){margin-left:auto;border-radius:18px 18px 4px 18px;background:#fff6e6}
+.balões q{quotes:none}
+.balões small{display:block;color:#7a6d62;font-size:.85rem;margin-top:.25rem}
+.dica{margin-top:.8rem;font-size:.95rem;background:#f1ece2;border-radius:12px;padding:.7rem .9rem;color:#4f453d}
+/* salão */
+.fotos{display:grid;gap:.6rem}
+.fotos figure{margin:0}
+.fotos img{width:100%;border-radius:16px;object-fit:cover}
+.fotos .f1{aspect-ratio:16/10}
+.fotos figcaption{font-size:.9rem;color:#6b5f55;margin-top:.3rem}
+@media(min-width:760px){.fotos{grid-template-columns:1.4fr 1fr;align-items:end}}
+/* onde */
+.onde{display:grid;gap:1rem}
+@media(min-width:760px){.onde{grid-template-columns:1.2fr 1fr}}
+.endereco{font-size:1.25rem;font-weight:800;line-height:1.35;margin:0 0 .6rem}
+.sala{display:inline-block;background:var(--mostarda);color:var(--tinta);font-weight:800;border-radius:10px;padding:.2rem .6rem;font-size:1.35rem}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:.6rem 0 1rem;padding:0;list-style:none}
+.chips li{background:#f1ece2;border-radius:999px;padding:.3rem .7rem;font-size:.9rem;font-weight:600}
+.horas{width:100%;border-collapse:collapse;font-size:1.05rem}
+.horas th,.horas td{text-align:left;padding:.6rem .2rem;border-bottom:1px solid #ece4d6}
+.horas tr.hoje{background:#fff3dc}
+.horas td:last-child{text-align:right;font-weight:700}
+.obs{font-size:.88rem;color:#7a6d62}
+footer{background:var(--madeira);color:#efe4d4;margin-top:2rem;padding:1.6rem 1rem 1.4rem}
+footer .in{max-width:1100px;margin:0 auto}
+footer p{margin:0 0 .5rem;max-width:70ch}
+footer a{color:#fff}
+.wolf{border-top:1px solid rgba(255,255,255,.18);margin-top:1rem;padding-top:1rem;font-size:.86rem;color:#cdbca6}
+/* barra fixa mobile */
+.fixa{position:fixed;left:0;right:0;bottom:0;z-index:40;background:#fff;border-top:1px solid #e3dacb;display:grid;grid-template-columns:2fr 1fr 1fr;gap:.5rem;padding:.6rem .75rem calc(.6rem + env(safe-area-inset-bottom))}
+.fixa a{min-height:52px;border-radius:14px;font-size:.95rem}
+@media(min-width:900px){.fixa{display:none}}
+/* ===== Movimento (WolfStudio v3) — só roda com JS e sem "reduzir movimento" ===== */
+:root{--e:cubic-bezier(.2,.7,.2,1)}
+.anim :is(.ola,.lousa,.status,.acoes3,.cartao,.sec-tit,.selo,.balões li,.dica,.fotos figure){transition:opacity .7s var(--e) var(--d,0ms),translate .8s var(--e) var(--d,0ms),scale .8s var(--e) var(--d,0ms),rotate .8s var(--e) var(--d,0ms),transform .35s var(--e),box-shadow .35s,border-color .25s,background-color .25s}
+.anim :is(.ola,.lousa,.status,.acoes3,.cartao,.sec-tit,.selo,.balões li,.dica,.fotos figure):not(.in){opacity:0;translate:var(--tx,0px) var(--ty,22px);scale:var(--sc,1)}
+@keyframes sobe{from{opacity:0;translate:0 18px}}
+@keyframes gira{to{rotate:360deg}}
+@media print{.anim *{opacity:1!important;translate:none!important;scale:none!important;clip-path:none!important}}
+/* botões */
+.bt,.acao{transition:background-color .2s,border-color .2s,transform .2s var(--e),box-shadow .2s}
+.bt:hover{transform:translateY(-2px);box-shadow:0 8px 14px -10px rgba(34,29,26,.6)}
+.acao:hover{transform:translateY(-3px);box-shadow:0 10px 16px -12px rgba(74,56,46,.55)}
+.bt:active,.acao:active{transform:scale(.96)}
+.acao svg{transition:transform .35s cubic-bezier(.3,1.6,.5,1)}
+.acao:hover svg{transform:scale(1.15) rotate(-6deg)}
+.barra{transition:box-shadow .3s}
+.rolou .barra{box-shadow:0 8px 20px -10px rgba(0,0,0,.55)}
+/* lousa: o giz "escreve" linha por linha */
+.anim .lousa :is(h2,.data,.modelo,li,.rodape-lousa){clip-path:inset(-15% 100% -15% -2%);transition:clip-path .6s cubic-bezier(.5,0,.3,1) calc(.3s + var(--k,0)*.15s)}
+.anim .lousa.in :is(h2,.data,.modelo,li,.rodape-lousa){clip-path:inset(-15% -2% -15% -2%)}
+.lousa .data{--k:1}.lousa .modelo{--k:2}.lousa li:nth-child(1){--k:3}.lousa li:nth-child(2){--k:4}.lousa li:nth-child(3){--k:5}.lousa li:nth-child(4){--k:6}.lousa .rodape-lousa{--k:7}
+.anim .lousa.in .giz-traco{animation:giz .5s ease 2.1s both}
+@keyframes giz{50%{translate:-6px -3px;rotate:-10deg}}
+/* status aberto pulsa */
+.status:not(.fechado) .pt{animation:pulso 2.4s ease-out infinite}
+@keyframes pulso{0%{box-shadow:0 0 0 0 rgba(94,125,58,.5)}70%,100%{box-shadow:0 0 0 10px rgba(94,125,58,0)}}
+/* cartões e avaliações */
+.modo{transition:transform .25s var(--e),box-shadow .25s}
+.modo:hover{transform:translateY(-3px);box-shadow:0 10px 16px -12px rgba(74,56,46,.5)}
+.anim .balões li{--tx:-22px;--ty:0px;--sc:.96;transform-origin:0 100%}
+.anim .balões li:nth-child(2){--tx:22px;transform-origin:100% 100%}
+.selo b{font-variant-numeric:tabular-nums}
+.horas tr.hoje{animation:hoje 1.2s ease .5s both}
+@keyframes hoje{from{background-color:transparent}}
+/* barra fixa do celular sobe ao carregar */
+.fixa{animation:sobe-barra .6s var(--e) .5s both}
+@keyframes sobe-barra{from{translate:0 110%}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+<script>(function(d){if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion:reduce)').matches)d.classList.add('anim')})(document.documentElement)</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<div class="demo" role="note">Demonstração WolfStudio — não é o site oficial.</div>
+<header class="barra">
+  <div class="in">
+    <div class="nome">Divino Sabor<small>Almoço seg a sáb · Centro de Guabiruba</small></div>
+    <a class="bt bt-mostarda" href="https://wa.me/5547996504485?text=Ol%C3%A1!%20O%20que%20tem%20no%20buffet%20hoje%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.2-.4.2-.4.7-1.3a.4.4 0 000-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.1 5.1 0 001.1 2.7 11.6 11.6 0 004.4 3.9c1.6.7 2.3.8 3.1.6a2.7 2.7 0 001.8-1.2 2.2 2.2 0 00.1-1.2c0-.1-.2-.2-.4-.3z"/></svg>WhatsApp</a>
+  </div>
+</header>
+
+<main id="conteudo">
+  <div class="painel">
+    <div>
+      <div class="ola">
+        <h1>Almoço caseiro com buffet a quilo ou livre</h1>
+        <p>De segunda a sábado, na sala 05 da Rua Alois Erthal, 1250, no Centro de Guabiruba.</p>
+      </div>
+      <!-- QUADRO DO DIA: o restaurante troca a lista abaixo todo dia. Os itens são só um MODELO. -->
+      <section class="lousa" aria-labelledby="t-hoje" style="margin-top:.4rem">
+        <h2 id="t-hoje">Hoje no buffet</h2>
+        <p class="data" id="data-hoje">segunda-feira</p>
+        <span class="modelo">Modelo · o restaurante atualiza</span>
+        <ul>
+          <li>carne do dia</li>
+          <li>massa</li>
+          <li>saladas</li>
+          <li>sobremesas</li>
+        </ul>
+        <p class="rodape-lousa">buffet a quilo ou livre · almoço com sobremesa</p>
+        <span class="giz-traco" aria-hidden="true"></span>
+      </section>
+    </div>
+
+    <aside style="display:grid;gap:1rem" aria-label="Horário e contato rápido">
+      <div class="status" id="status" role="status"><span class="pt" aria-hidden="true"></span><span id="status-txt">Seg a sáb · almoço a partir das 11h<small>Domingo fechado</small></span></div>
+      <div class="acoes3">
+        <a class="acao wa" href="https://wa.me/5547996504485?text=Ol%C3%A1!%20Quero%20fazer%20uma%20reserva%20no%20Divino%20Sabor." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2z"/></svg>Reservar</a>
+        <a class="acao" href="tel:+5547996504485"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 006 6L16 13l5 2v4a2 2 0 01-2 2A17 17 0 013 5a2 2 0 012-2"/></svg>Ligar</a>
+        <a class="acao" href="https://www.google.com/maps?cid=12559677197776803415" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0114 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Rota</a>
+      </div>
+      <div class="cartao">
+        <h2>Como funciona</h2>
+        <div class="dois">
+          <div class="modo"><h3>Buffet a quilo</h3><p>Monte o prato e pese no balcão.</p><div class="preco">valor do quilo: sob consulta</div></div>
+          <div class="modo"><h3>Buffet livre</h3><p>Um valor fixo por pessoa.</p><div class="preco">valor: sob consulta</div></div>
+        </div>
+        <p class="inclui">Almoço com sobremesa, de seg a sáb</p>
+      </div>
+      <!--
+      BLOCO OPCIONAL (desligado): ativar só se o restaurante confirmar que faz marmita.
+      <div class="cartao">
+        <h2>Marmita</h2>
+        <p>Peça pelo WhatsApp e retire no balcão.</p>
+      </div>
+      -->
+    </aside>
+  </div>
+
+  <section aria-labelledby="t-nota">
+    <h2 class="sec-tit" id="t-nota">Quem almoça aqui avalia</h2>
+    <div class="nota">
+      <div class="selo"><b>4,8</b><span aria-hidden="true">★★★★★</span><p>289 avaliações no Google</p></div>
+      <ul class="balões">
+        <li><q>Excelente atendimento, sem falar que a comida é sensacional 🥰</q><small>5★ · Google · out/2025</small></li>
+        <li><q>Ótimo atendimento e comida boa! Principalmente as sobremesas variadas 😋</q><small>5★ · Google · mai/2025</small></li>
+        <li><q>Além da comida ser muito boa é saber que existe ainda um atendimento super humano desejo muito sucesso vcs merecem</q><small>4★ · Google · jun/2025</small></li>
+      </ul>
+    </div>
+    <p class="dica">Dica: pelo Google, o horário mais cheio é quarta ao meio-dia, com espera de até 15 minutos.</p>
+  </section>
+
+  <section aria-labelledby="t-salao">
+    <h2 class="sec-tit" id="t-salao">O salão</h2>
+    <div class="fotos">
+      <figure><img class="f1" src="assets/gmaps-balcao-salao-atual.jpg" width="1600" height="1200" loading="lazy" alt="Salão do restaurante de dia: balcão de madeira escura com faixas amarelas, buffet ao fundo, geladeira de bebidas, plantas e mesas com cadeiras pretas"><figcaption>O balcão e as mesas do salão.</figcaption></figure>
+      <figure><img src="assets/buffet-balcao-granito.jpg" width="944" height="362" loading="lazy" alt="Buffet em balcão curvo de granito com carnes, massas, purê e saladas"><figcaption>O buffet (foto do portal de turismo de Guabiruba).</figcaption></figure>
+    </div>
+  </section>
+
+  <section aria-labelledby="t-onde">
+    <h2 class="sec-tit" id="t-onde">Onde fica</h2>
+    <div class="onde">
+      <div class="cartao">
+        <p class="endereco">Rua Alois Erthal, 1250<br><span class="sala">Sala 05</span> · Ed. Vitor Luis<br>Centro · Guabiruba/SC</p>
+        <ul class="chips"><li>Banheiro acessível para cadeira de rodas</li><li>CEP 88360-000</li></ul>
+        <a class="bt bt-mostarda" href="https://www.google.com/maps?cid=12559677197776803415" target="_blank" rel="noopener">Abrir no Google Maps</a>
+      </div>
+      <div class="cartao">
+        <h2>Horário do almoço</h2>
+        <table class="horas" id="horas">
+          <caption class="obs" style="caption-side:bottom;text-align:left;padding-top:.5rem">Horário de fechamento a confirmar com o restaurante.</caption>
+          <tbody>
+            <tr data-d="1"><th scope="row">Segunda</th><td>a partir das 11h</td></tr>
+            <tr data-d="2"><th scope="row">Terça</th><td>a partir das 11h</td></tr>
+            <tr data-d="3"><th scope="row">Quarta</th><td>a partir das 11h</td></tr>
+            <tr data-d="4"><th scope="row">Quinta</th><td>a partir das 11h</td></tr>
+            <tr data-d="5"><th scope="row">Sexta</th><td>a partir das 11h</td></tr>
+            <tr data-d="6"><th scope="row">Sábado</th><td>a partir das 11h</td></tr>
+            <tr data-d="0"><th scope="row">Domingo</th><td>fechado</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="in">
+    <p><strong>Restaurante Divino Sabor</strong> · Rua Alois Erthal, 1250, sala 05, Centro, Guabiruba/SC · <a href="tel:+5547996504485">(47) 99650-4485</a></p>
+    <!-- Linha opcional: confirmar se o restaurante quer mostrar. -->
+    <p>Em 2024, fomos ponto de coleta de doações para as vítimas das enchentes no Rio Grande do Sul.</p>
+    <div class="wolf">
+      <p>Demonstração feita por WolfStudio (Lucas Wolf, Guabiruba/SC). Não é o site oficial do restaurante. Fotos: Google Maps e portal de turismo de Guabiruba, só para esta demonstração.</p>
+      <p>Outros trabalhos: catálogo digital da JE7 (empresa de fora de Guabiruba) e site Etiquetas Guabiruba, feito para a família do Lucas.</p>
+    </div>
+  </div>
+</footer>
+
+<nav class="fixa" aria-label="Ações rápidas">
+  <a class="bt bt-mostarda" href="https://wa.me/5547996504485?text=Ol%C3%A1!%20O%20que%20tem%20no%20buffet%20hoje%3F" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="bt bt-claro" href="tel:+5547996504485">Ligar</a>
+  <a class="bt bt-claro" href="https://www.google.com/maps?cid=12559677197776803415" target="_blank" rel="noopener">Rota</a>
+</nav>
+
+<script>
+(function(){
+  var dias=['domingo','segunda-feira','terça-feira','quarta-feira','quinta-feira','sexta-feira','sábado'];
+  var p=new Intl.DateTimeFormat('en-US',{timeZone:'America/Sao_Paulo',weekday:'short',hour:'numeric',hour12:false}).formatToParts(new Date());
+  var wd={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[p.find(function(x){return x.type==='weekday'}).value];
+  var h=parseInt(p.find(function(x){return x.type==='hour'}).value,10);
+  document.getElementById('data-hoje').textContent=dias[wd];
+  var row=document.querySelector('#horas tr[data-d="'+wd+'"]'); if(row) row.classList.add('hoje');
+  var st=document.getElementById('status'), t=document.getElementById('status-txt');
+  if(wd===0){st.classList.add('fechado');t.innerHTML='Hoje é domingo: fechado<small>Volta segunda, almoço a partir das 11h</small>';}
+  else if(h<11){t.innerHTML='Hoje tem almoço, a partir das 11h<small>'+dias[wd]+'</small>';}
+  else if(h<15){t.innerHTML='Almoço servido hoje desde as 11h<small>Confira pelo WhatsApp até que horas</small>';}
+  else{st.classList.add('fechado');t.innerHTML='O almoço de hoje já passou<small>'+(wd===6?'Volta segunda':'Amanhã')+', a partir das 11h</small>';}
+})();
+</script>
+<script>
+/* Movimento (WolfStudio v3): revelar ao rolar, contadores e menu ativo. */
+(function(){
+  var R=document.documentElement; if(!R.classList.contains('anim')) return;
+  try{
+    var SEL='.ola,.lousa,.status,.acoes3,.cartao,.sec-tit,.selo,.balões li,.dica,.fotos figure', CNT='.selo b';
+    var io=new IntersectionObserver(function(es){
+      var n=0;
+      es.forEach(function(e){
+        if(!e.isIntersecting) return;
+        var el=e.target; io.unobserve(el);
+        if(n) el.style.setProperty('--d',Math.min(n,7)*90+'ms');
+        n++; el.classList.add('in');
+        setTimeout(function(){el.style.removeProperty('--d')},1700);
+      });
+    },{threshold:.08,rootMargin:'0px 0px -5% 0px'});
+    var pend=[].slice.call(document.querySelectorAll(SEL));
+    pend.forEach(function(el){io.observe(el)});
+    /* rolagem rápida pode pular um bloco: o que já ficou para cima aparece sem esperar */
+    var tv=0;
+    function varre(){pend=pend.filter(function(el){
+      if(el.classList.contains('in')) return false;
+      if(el.getBoundingClientRect().bottom<0){io.unobserve(el);el.classList.add('in');return false}
+      return true;
+    })}
+
+    function conta(el){
+      var tn=null;
+      [].some.call(el.childNodes,function(c){if(c.nodeType===3&&/\d,\d/.test(c.nodeValue)){tn=c;return true}});
+      if(!tn) return;
+      var full=tn.nodeValue, m=full.match(/(\d+),(\d)/), alvo=parseFloat(m[1]+'.'+m[2]), t0=null;
+      function f(t){
+        if(!t0) t0=t;
+        var p=Math.min(1,(t-t0)/1100), v=alvo*(1-Math.pow(1-p,3));
+        tn.nodeValue=p<1?full.replace(m[0],v.toFixed(1).replace('.',',')):full;
+        if(p<1) requestAnimationFrame(f);
+      }
+      requestAnimationFrame(f);
+    }
+    var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){cio.unobserve(e.target);conta(e.target)}})},{threshold:.6});
+    [].forEach.call(document.querySelectorAll(CNT),function(el){cio.observe(el)});
+
+    var links=[].slice.call(document.querySelectorAll('nav a[href^="#"]')), mapa={};
+    var sio=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      links.forEach(function(a){a.classList.remove('on')}); mapa[e.target.id].classList.add('on');
+    })},{rootMargin:'-40% 0px -55% 0px'});
+    links.forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1)); if(s&&s.id!=='conteudo'){mapa[s.id]=a;sio.observe(s)}});
+
+    var espera=false;
+    function rolar(){
+      espera=false; var y=window.scrollY||0;
+      R.classList.toggle('rolou',y>8);
+      clearTimeout(tv); if(pend.length) tv=setTimeout(varre,180);
+      if(y<160) links.forEach(function(a){a.classList.remove('on')});
+
+    }
+    window.addEventListener('scroll',function(){if(!espera){espera=true;requestAnimationFrame(rolar)}},{passive:true});
+    window.addEventListener('resize',rolar);
+    rolar();
+
+  }catch(err){R.classList.remove('anim')}
+})();
+</script>
+</body>
+</html>
